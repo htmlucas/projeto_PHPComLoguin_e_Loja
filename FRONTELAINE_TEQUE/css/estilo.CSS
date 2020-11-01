@@ -1,0 +1,509 @@
+*{
+    color: black;
+    margin: 0;
+    
+}
+/*INICIO DO BOTAO DROP CSS*/
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    padding-right: 33px;
+    border: none;
+    cursor: pointer;
+    margin: 8px 0;
+    background-image: url('../img/pronto.png');
+    background-size: 25px 16px;
+    background-repeat: no-repeat;
+    background-position: right;    
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+.letra{
+    font-size: 34px;
+    text-align: center;
+}
+.letrau{
+    font-size: 54px;   
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+/*FIM DO BOTAO DROP DO USUARIO*/
+
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the contente inside the overlay */
+.overlay-contente {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/*PERFIL USUARIO*/
+.capa{
+    width: 100%;
+    height: auto;
+    
+}
+figure {
+    margin-top:0 ;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.figure.fotolegenda{
+    position: relative;
+    
+}
+.imgthumb{
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 4px;
+    width: 10%;
+    padding: 1px;
+    padding-bottom: 6px;
+    position: absolute;
+    margin-top: -12%;
+    margin-left: 2%;
+}
+.botaoloja {
+    background-color: #4CAF50;
+    color: white;
+    padding: 17px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    
+}
+.imguser{
+    width: 100%;
+    display: block;
+    border: 4px solid white;
+    background-color: white;
+    border-radius: 4px;
+}
+.nome{
+    margin-left: 170px;
+    margin-bottom: 40px;
+}
+.updatebox{
+    position: absolute;
+    top: 0px;
+    margin: 0px;
+    text-align: center;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.update{
+    position: relative;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 100%;
+    font-size: 15px;
+    z-index: 2;
+    width: 100%;
+    font-weight:bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    visibility: hidden;
+
+}
+.updatebox:hover .update{
+    visibility: visible;
+}
+.imgucontainerperfil:hover .update{
+    visibility: visible;
+}
+.nomeusuario{
+    position: relative;
+    font-size: 25px;
+    color: black;
+    margin-left: 0px;
+    bottom: 70px;
+    left: 180px;
+    font-weight:bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;    
+}
+
+
+.container h1{
+    color:black;
+    margin:0px;
+    padding:0px;
+}
+.container h3{
+    color:black;
+    margin:0px;
+    padding:0px;
+    
+}
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.genero input{
+    width: 10%;
+    margin: 0 0;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.button:hover {
+    opacity: 0.8;
+}
+.usuario{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    visibility: hidden;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.imgcontainerperfil {
+    text-align: center;
+    margin: 0;
+    position: relative;
+       
+}
+
+.container {
+    padding: 16px;
+    
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+    color:black;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    z-index: 2;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+    z-index: 2;
+}
+.closeperfil {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    z-index: 2;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.closeperfil:hover,
+.closeperfil:focus {
+    color: red;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+@media screen and (min-width: 1200px) and (max-width:1300px) {
+    .updatebox{
+        position: absolute;
+        margin: 0px;
+        text-align: center;
+        margin-right: 3px;
+}
+    .update{
+        position: relative;
+        text-align: center;
+        font-size: 15px;
+        z-index: 2;
+        font-weight:bold;
+        margin-left: 5;
+        margin-top: 100%;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+    .nomeusuario{
+        left: 160px;
+        bottom: 60px;
+    }
+}
+
+
+@media screen and (min-width: 300px) and (max-width:1200px) {
+    .updatebox{
+        position: absolute;
+        margin: 0px;
+        text-align: center;
+        margin-right: 3px;
+    }
+    .update{
+        position: relative;
+        text-align: center;
+        font-size: 15px;
+        z-index: 2;
+        font-weight:bold;
+        margin-left: 0;
+        margin-top: 60%;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+    .nomeusuario{
+        left: 145px;
+        bottom: 55px;
+        font-size: 23px;
+
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width:1200px) {
+    .updatebox{
+        position: absolute;
+        margin: 0px;
+        text-align: center;
+        margin-right: 3px;
+    }
+    .update{
+        position: relative;
+        text-align: center;
+        font-size: 15px;
+        z-index: 2;
+        font-weight:bold;
+        margin-left: 0;
+        margin-top: 60%;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+    .nomeusuario{
+        left: 145px;
+        bottom: 55px;
+        font-size: 23px;
+
+    }
+}
+@media screen and (max-width: 1000px) {
+    .nomeusuario{
+        left: 115px;
+        bottom: 55px;
+        font-size: 23px;
+
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .nomeusuario{
+        left: 99px;
+        bottom: 55px;
+        font-size: 23px;
+
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    button{
+        font-size: 15px;
+    }
+    .nomeusuario{
+        left: 75px;
+        bottom: 55px;
+        font-size: 20px;
+        bottom: 45px;
+
+    }
+    
+}
+@media screen and (max-width: 430px) {
+    button{
+        font-size: 10px;
+    }
+    .nomeusuario{
+        left: 55px;
+        bottom: 55px;
+        font-size: 13px;;
+        bottom: 35px;
+
+    }
+    
+}
+@media screen and (max-width: 300px) {
+    button{
+        font-size: 6px;
+    }
+    
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+    
+}
+
+#success_message{ display: none;}
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}

@@ -1,0 +1,4 @@
+
+C:\xampp\htdocs>cd\xampp\htdocs\FRONTELAINE_TEQUE
+C:\xampp\htdocs\FRONTELAINE_TEQUE>composer require kevinlebrun/slug.php 1.*
+C:\xampp\htdocs\FRONTELAINE_TEQUE>composer require phpmailer/phpmailer

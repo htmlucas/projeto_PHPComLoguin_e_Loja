@@ -1,0 +1,6 @@
+{
+    "require": {
+        "kevinlebrun/slug.php": "1.*",
+        "phpmailer/phpmailer": "^5.2"
+    }
+}
